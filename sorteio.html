@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+    <head>
+         <title>Lógica de programação com Javascript</title>
+         <meta charset="utf-8">
+    </head>
+    <body>
+         <hl> Lógica de programação com Javascript</hl>;
+
+         <script>
+     
+     var nj1 = prompt ("Jogador 1 Qual Seu Nome?")
+
+     var nj2= prompt ("Jogador 2 Qual Seu Nome?")
+
+     var j1 = prompt (( nj1 ) + " Escolha um Número de 0 a 1")
+     j1 = parseInt (j1)
+
+     var j2 = prompt (( nj2 ) + " Escolha um Número de 0 a 1")
+     j2 = parseInt (j2)
+
+     if (j1 === j2) {
+          alert("Empate");
+     } else {
+
+          var sorteio = parseInt (Math.random() * 2);
+
+               if(sorteio === 0){
+               if(j1 < j2){
+                    alert("O Número Sorteado foi: " + (sorteio) + ". " + (nj1) + " Foi o Vencedor com o Número " +(j1) + ".")
+               } else {
+                    alert("O Número Sorteado foi: " + (sorteio) + ". " + (nj2) + " Foi o Vencedor com o Número " +(j2) + ".") 
+               }
+
+          } else {
+               if(j1 > j2 ){
+                    alert("O Número Sorteado foi: " + (sorteio) + ". " + (nj1) + " Foi o Vencedor com o Número " + (j1) + ".") 
+               } else {
+                    alert("O Número Sorteado foi: " + (sorteio) + ". " + (nj2) + " Foi o Vencedor com o Número " + (j2) + ".") 
+               }
+          }
+          
+     }
+         </script>
+    </body>
+</html>   
+     
+
+     
+
+     
+
+     
+
+    
+
